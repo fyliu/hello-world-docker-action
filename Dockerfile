@@ -1,5 +1,5 @@
-from alpine:3.10
+FROM alpine:3.10
 
-copy entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 
-entrypoint ["/entrypoint.sh"]
+ENTRYPOINT ["/entrypoint.sh"]
